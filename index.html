@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#" data-page="homePage">HealthCare</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#" data-page="homePage">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-page="aboutPage">Doctors</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-page="loginPage">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-logout="true">Logout</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-page="blogPage">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-page="contactPage">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-page="feedbackPage">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HOME PAGE -->
+<section id="homePage" class="page active">
+    <div class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h1 class="fw-bold hero-title">Welcome to HealthCare Platform</h1>
+                    <p class="lead hero-lead">
+                        Your health is our priority. Connect with top doctors anytime, book appointments easily, and stay informed with health tips.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-lg shadow-btn" data-page="loginPage">Get Started</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800" 
+                         alt="Healthcare" class="img-fluid rounded hero-img shadow-modern">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-section py-5 bg-light">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="feature-card p-4 rounded shadow-modern h-100">
+                        <img src="/assets/doctor1.jpg"
+                             alt="Expert Doctors" class="img-fluid mb-3 feature-img rounded">
+                        <h5 class="fw-bold">Expert Doctors</h5>
+                        <p>Connect with certified medical specialists across various fields for the best care.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-4 rounded shadow-modern h-100">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=400&h=250&fit=crop" 
+                             alt="Modern Clinics" class="img-fluid mb-3 feature-img rounded">
+                        <h5 class="fw-bold">Modern Clinics</h5>
+                        <p>Our clinics are equipped with latest medical technology to ensure accurate treatment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-4 rounded shadow-modern h-100">
+                        <img src="/assets/online_consultation.jpg"
+                             alt="Online Consultation" class="img-fluid mb-3 feature-img rounded">
+                        <h5 class="fw-bold">Online Consultation</h5>
+                        <p>Book virtual appointments from the comfort of your home without any hassle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT PAGE -->
+<section id="aboutPage" class="page d-none">
+    <div class="container py-5">
+        <h2 class="fw-bold text-center mb-5">Our Clinics & Doctors</h2>
+
+        <div class="row g-4">
+            <!-- Doctor 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-modern h-100 text-center p-3">
+                    <img src="/assets/young-asian-female-doctor-standing-600nw-2138546201.jpg.webp"
+                         alt="Alaa Kotb" class="img-fluid rounded-circle mb-3 doctor-img">
+                    <h5 class="fw-bold">Alaa Kotb</h5>
+                    <p class="text-muted">Cardiology</p>
+                    <p>Dr. Alaa Kotb is a renowned cardiologist known for her dedication to patient care and medical research.</p>
+                </div>
+            </div>
+
+            <!-- Doctor 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-modern h-100 text-center p-3">
+                    <img src="/assets/portrait-asian-female-doctor-smiling-white-background_296537-21.jpg.avif"
+                         alt="Yasmin Samy" class="img-fluid rounded-circle mb-3 doctor-img">
+                    <h5 class="fw-bold">Yasmin Samy</h5>
+                    <p class="text-muted">Cardiology</p>
+                    <p>Dr. Yasmin Samy specializes in diagnosing and treating heart diseases with over 15 years of experience.</p>
+                </div>
+            </div>
+
+            <!-- Doctor 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-modern h-100 text-center p-3">
+                    <img src="/assets/images.jpeg"
+                         alt="Noran Hossam" class="img-fluid rounded-circle mb-3 doctor-img">
+                    <h5 class="fw-bold">Noran Hossam</h5>
+                    <p class="text-muted">Gastroenterology</p>
+                    <p>Dr. Noran Hossam specializes in diagnosing and treating digestive system disorders.</p>
+                </div>
+            </div>
+
+            <!-- Doctor 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-modern h-100 text-center p-3">
+                    <img src="/assets/7f7955a81f8a0a76fb3ebbdbed63477c.jpg"
+                         alt="Rawan Khaled" class="img-fluid rounded-circle mb-3 doctor-img">
+                    <h5 class="fw-bold">Rawan Khaled</h5>
+                    <p class="text-muted">Gastroenterology</p>
+                    <p>Dr. Rawan Khaled is an expert in gastroenterology with focus on modern treatment methods.</p>
+                </div>
+            </div>
+
+            <!-- Doctor 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-modern h-100 text-center p-3">
+                    <img src="/assets/COLOURBOX12657449.jpg.webp"
+                         alt="Nourhan Ahmed" class="img-fluid rounded-circle mb-3 doctor-img">
+                    <h5 class="fw-bold">Nourhan Ahmed</h5>
+                    <p class="text-muted">Pulmonology</p>
+                    <p>Dr. Nourhan Ahmed specializes in respiratory diseases and lung health.</p>
+                </div>
+            </div>
+
+            <!-- Doctor 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-modern h-100 text-center p-3">
+                    <img src="/assets/COLOURBOX29519119.jpg.webp"
+                         alt="Sara Ahmed" class="img-fluid rounded-circle mb-3 doctor-img">
+                    <h5 class="fw-bold">Sara Ahmed</h5>
+                    <p class="text-muted">Pulmonology</p>
+                    <p>Dr. Sara Ahmed is a pulmonologist with expertise in treating asthma and respiratory infections.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT PAGE -->
+<section id="contactPage" class="page d-none">
+    <div class="container py-5">
+        <h2 class="fw-bold text-center mb-5">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="contactName" class="form-label">Name</label>
+                        <input type="text" id="contactName" class="form-control" placeholder="Your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactEmail" class="form-label">Email</label>
+                        <input type="email" id="contactEmail" class="form-control" placeholder="Your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactMessage" class="form-label">Message</label>
+                        <textarea id="contactMessage" class="form-control" rows="5" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 shadow-btn">Send Message</button>
+                    <p id="contactMsg" class="mt-3 text-success text-center"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG PAGE -->
+<section id="blogPage" class="page d-none">
+    <div class="container py-5">
+        <h2 class="fw-bold text-center mb-5">Health Blog</h2>
+        <div class="row g-4">
+            <!-- Blog 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-modern h-100 p-3">
+                    <h5 class="fw-bold">5 Tips for a Healthy Heart</h5>
+                    <p class="text-muted">Cardiology | Nov 1, 2025</p>
+                    <p>Learn simple ways to keep your heart strong with diet, exercise, and regular check-ups.</p>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalHeart">Read More</button>
+                </div>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-modern h-100 p-3">
+                    <h5 class="fw-bold">Managing Stress Effectively</h5>
+                    <p class="text-muted">Mental Health | Oct 25, 2025</p>
+                    <p>Simple strategies to manage stress and protect your mental health daily.</p>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalStress">Read More</button>
+                </div>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-modern h-100 p-3">
+                    <h5 class="fw-bold">Nutrition for a Strong Immune System</h5>
+                    <p class="text-muted">Nutrition | Oct 20, 2025</p>
+                    <p>Boost your immunity naturally with nutrition and lifestyle choices.</p>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalImmunity">Read More</button>
+                </div>
+            </div>
+
+            <!-- Blog 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-modern h-100 p-3">
+                    <h5 class="fw-bold">The Importance of Healthy Sleep</h5>
+                    <p class="text-muted">Wellness | Oct 15, 2025</p>
+                    <p>Discover why quality sleep matters for your body and mind.</p>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalSleep">Read More</button>
+                </div>
+            </div>
+
+            <!-- Blog 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-modern h-100 p-3">
+                    <h5 class="fw-bold">Healthy Diet Tips</h5>
+                    <p class="text-muted">Nutrition | Oct 10, 2025</p>
+                    <p>Simple dietary tips for maintaining a healthy lifestyle.</p>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalDiet">Read More</button>
+                </div>
+            </div>
+
+            <!-- Blog 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-modern h-100 p-3">
+                    <h5 class="fw-bold">Mental Health Awareness</h5>
+                    <p class="text-muted">Mental Health | Oct 5, 2025</p>
+                    <p>Simple ways to support and improve your mental health daily.</p>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalMental">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MODALS FOR BLOG -->
+<div class="modal fade" id="modalHeart" tabindex="-1" aria-labelledby="modalHeartLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalHeartLabel">5 Tips for a Healthy Heart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Eat a Balanced Diet: Focus on fruits, vegetables, whole grains, lean proteins, and healthy fats.</li>
+                    <li>Stay Physically Active: Engage in at least 150 minutes of moderate exercise per week.</li>
+                    <li>Manage Stress: Meditation, hobbies, mindfulness, and quality sleep help reduce stress levels.</li>
+                    <li>Avoid Smoking & Limit Alcohol: Protect your heart by quitting smoking and drinking moderately.</li>
+                    <li>Regular Check-ups: Monitor blood pressure, cholesterol, and consult your doctor for screenings.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalStress" tabindex="-1" aria-labelledby="modalStressLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalStressLabel">Managing Stress Effectively</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Practice Mindfulness: Meditation, yoga, and breathing exercises reduce anxiety.</li>
+                    <li>Exercise Regularly: Physical activity releases endorphins that improve mood.</li>
+                    <li>Maintain Healthy Relationships: Surround yourself with supportive friends and family.</li>
+                    <li>Set Boundaries: Learn to say no and prioritize your time effectively.</li>
+                    <li>Sleep Well: Quality sleep restores your mind and body.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalImmunity" tabindex="-1" aria-labelledby="modalImmunityLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalImmunityLabel">Nutrition for a Strong Immune System</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Eat a Variety of Fruits and Vegetables: Rich in vitamins and antioxidants.</li>
+                    <li>Include Protein: Lean meats, fish, legumes, and nuts.</li>
+                    <li>Stay Hydrated: Water supports all cellular functions.</li>
+                    <li>Include Probiotics: Yogurt, kefir, and fermented foods support gut health.</li>
+                    <li>Limit Sugar and Processed Foods: Excess sugar can weaken immune defenses.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalSleep" tabindex="-1" aria-labelledby="modalSleepLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalSleepLabel">The Importance of Healthy Sleep</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Maintain a regular sleep schedule.</li>
+                    <li>Create a relaxing bedtime routine.</li>
+                    <li>Keep your bedroom dark and quiet.</li>
+                    <li>Avoid screens before bedtime.</li>
+                    <li>Manage stress for better sleep quality.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalDiet" tabindex="-1" aria-labelledby="modalDietLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalDietLabel">Healthy Diet Tips</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Eat more fruits and vegetables daily.</li>
+                    <li>Choose whole grains over refined grains.</li>
+                    <li>Include lean protein sources.</li>
+                    <li>Limit sugar and processed foods.</li>
+                    <li>Stay hydrated throughout the day.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalMental" tabindex="-1" aria-labelledby="modalMentalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalMentalLabel">Mental Health Awareness</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Practice mindfulness and meditation daily.</li>
+                    <li>Stay socially connected with friends and family.</li>
+                    <li>Take breaks and rest when needed.</li>
+                    <li>Exercise regularly to reduce stress.</li>
+                    <li>Seek professional help if you feel overwhelmed.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FEEDBACK PAGE -->
+<section id="feedbackPage" class="page d-none">
+    <div class="container py-5">
+        <h2 class="fw-bold text-center mb-5">Feedback</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form id="feedbackForm">
+                    <div class="mb-3">
+                        <label for="feedbackName" class="form-label">Your Name</label>
+                        <input type="text" id="feedbackName" class="form-control" placeholder="Your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="feedbackEmail" class="form-label">Your Email</label>
+                        <input type="email" id="feedbackEmail" class="form-control" placeholder="Your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="doctorSelect" class="form-label">Select Doctor</label>
+                        <select id="doctorSelect" class="form-select" required>
+                            <option value="">Choose a doctor</option>
+                            <option value="Alaa Kotb">Alaa Kotb</option>
+                            <option value="Yasmin Samy">Yasmin Samy</option>
+                            <option value="Noran Hossam">Noran Hossam</option>
+                            <option value="Rawan Khaled">Rawan Khaled</option>
+                            <option value="Nourhan Ahmed">Nourhan Ahmed</option>
+                            <option value="Sara Ahmed">Sara Ahmed</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="feedbackMessage" class="form-label">Your Feedback</label>
+                        <textarea id="feedbackMessage" class="form-control" rows="5" placeholder="Your feedback" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 shadow-btn">Submit Feedback</button>
+                    <p id="feedbackMsg" class="mt-3 text-center"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LOGIN PAGE -->
+<section id="loginPage" class="page d-none">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold mb-3">Login</h1>
+            <input type="text" id="username" class="form-control mb-3" placeholder="Enter your name">
+            <select id="roleSelect" class="form-select mb-3">
+                <option value="">Select Role</option>
+                <option value="patient">Patient</option>
+                <option value="doctor">Doctor</option>
+            </select>
+            <button class="btn btn-primary btn-lg shadow-btn" id="loginBtn">Login</button>
+            <p id="loginMsg" class="mt-3 text-center"></p>
+        </div>
+
+        <!-- PATIENT PAGE -->
+        <div id="patientPage" class="d-none">
+            <h2 class="fw-bold mb-4 text-primary">
+                <i class="bi bi-person-heart me-2"></i>Patient Dashboard
+            </h2>
+
+            <div class="row">
+                <!-- Left Column: Appointment Booking -->
+                <div class="col-lg-8">
+                    <!-- Find & Book Doctor Card -->
+                    <div class="card shadow-modern mb-4 border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-search-heart me-2"></i>Find & Book Doctor
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light">
+                                            <i class="bi bi-search text-primary"></i>
+                                        </span>
+                                        <input type="text" id="searchDoctor" class="form-control" 
+                                               placeholder="Search by doctor name or specialty...">
+                                        <button class="btn btn-primary" id="filterDoctorsBtn">
+                                            <i class="bi bi-search me-1"></i> Search
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <select id="appointmentType" class="form-select">
+                                        <option value="online">📱 Online Consultation</option>
+                                        <option value="clinic">🏥 In-Clinic Visit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <label class="form-label fw-bold">
+                                    <i class="bi bi-person-badge me-1"></i>Select Doctor:
+                                </label>
+                                <select id="appointmentSelect" class="form-select form-select-lg">
+                                    <option value="">👨‍⚕️ Select a doctor...</option>
+                                </select>
+                            </div>
+                            
+                            <div class="d-grid mt-4">
+                                <button class="btn btn-success btn-lg shadow-btn py-3" id="bookAppointmentBtn">
+                                    <i class="bi bi-calendar-check me-2"></i>Book Appointment Now
+                                </button>
+                            </div>
+                            <p id="bookingMsg" class="mt-3 alert" style="display: none;"></p>
+                        </div>
+                    </div>
+
+                    <!-- Available Appointments Card -->
+                    <div class="card shadow-modern mb-4 border-info">
+                        <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-calendar2-week me-2"></i>Available Time Slots
+                            </h5>
+                            <span class="badge bg-light text-info">Live</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-light mb-4 border-info">
+                                <i class="bi bi-info-circle text-info me-2"></i>
+                                Browse and instantly book available appointments with certified specialists
+                            </div>
+                            
+                            <div id="availableAppointmentsContainer" class="row g-3">
+                                <!-- Available slots will be loaded here -->
+                                <div class="col-12 text-center py-5">
+                                    <div class="spinner-border text-info" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <p class="mt-3 text-muted">Loading available appointments...</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 text-end">
+                                <small class="text-muted">
+                                    <i class="bi bi-arrow-clockwise me-1"></i>
+                                    Auto-refreshes every 5 minutes
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Health Info & Video -->
+                <div class="col-lg-4">
+                    <!-- Test Results Card -->
+                    <div class="card shadow-modern mb-4 border-success">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-clipboard2-pulse me-2"></i>Health Summary
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <div class="health-status-circle mx-auto">
+                                    <i class="bi bi-heart-pulse-fill text-success" style="font-size: 2.5rem;"></i>
+                                </div>
+                                <h5 class="mt-3 text-success">Excellent Health</h5>
+                                <p class="text-muted">Last updated: Today</p>
+                            </div>
+                            
+                            <div class="health-metrics">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-thermometer text-primary me-2"></i>Blood Pressure</span>
+                                    <span class="fw-bold text-success">120/80</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-droplet text-primary me-2"></i>Cholesterol</span>
+                                    <span class="fw-bold text-success">Normal</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-prescription2 text-primary me-2"></i>Blood Sugar</span>
+                                    <span class="fw-bold text-success">98 mg/dL</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span><i class="bi bi-activity text-primary me-2"></i>BMI</span>
+                                    <span class="fw-bold text-success">23.5</span>
+                                </div>
+                            </div>
+                            
+                            <div class="alert alert-success mt-4 border-0">
+                                <p id="testResultMsg" class="mb-0 text-center fw-bold">
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    All results within normal range
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Call Card -->
+                    <div class="card shadow-modern border-warning" id="videoCallSection">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-camera-video me-2"></i>Video Consultation
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-camera-video text-warning" style="font-size: 3rem;"></i>
+                                <h5 class="mt-2">Instant Video Call</h5>
+                                <p class="text-muted">Connect with your doctor instantly</p>
+                            </div>
+                            
+                            <div class="video-preview mb-3">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="video-placeholder bg-dark rounded text-center p-3">
+                                            <i class="bi bi-person-video text-light" style="font-size: 2rem;"></i>
+                                            <p class="text-light mb-0 small mt-2">Your Camera</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="video-placeholder bg-secondary rounded text-center p-3">
+                                            <i class="bi bi-person-video text-light" style="font-size: 2rem;"></i>
+                                            <p class="text-light mb-0 small mt-2">Doctor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-warning btn-lg" id="startCallBtn">
+                                    <i class="bi bi-play-circle me-2"></i>Start Video Call
+                                </button>
+                                <button class="btn btn-outline-warning" id="testEquipmentBtn">
+                                    <i class="bi bi-gear me-2"></i>Test Equipment
+                                </button>
+                            </div>
+                            
+                            <!-- Video elements (hidden by default) -->
+                            <div class="mt-3" style="display: none;" id="videoElements">
+                                <div class="row mt-4">
+                                    <div class="col-6">
+                                        <h6 class="text-center">Your Camera</h6>
+                                        <video id="localVideo" autoplay playsinline muted class="video-box"></video>
+                                    </div>
+                                    <div class="col-6">
+                                        <h6 class="text-center">Doctor</h6>
+                                        <video id="remoteVideo" autoplay playsinline class="video-box"></video>
+                                    </div>
+                                </div>
+                                <div class="call-controls mt-3" id="callControls" style="display: none;">
+                                    <button class="btn btn-danger btn-sm" id="endCallBtn">
+                                        <i class="bi bi-telephone-x"></i> End
+                                    </button>
+                                    <button class="btn btn-secondary btn-sm" id="toggleAudioBtn">
+                                        <i class="bi bi-mic"></i>
+                                    </button>
+                                    <button class="btn btn-secondary btn-sm" id="toggleVideoBtn">
+                                        <i class="bi bi-camera-video"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DOCTOR PAGE -->
+        <div id="doctorPage" class="d-none">
+            <h2 class="fw-bold mb-4">Doctor Dashboard</h2>
+
+            <div class="card shadow-modern mb-4">
+                <div class="card-body">
+                    <h4 class="card-title">Booked Appointments</h4>
+                    <ul id="doctorAppointments" class="list-group mt-3">
+                        <li class="list-group-item">No appointments yet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Call for Doctor -->
+<div class="card shadow-modern mb-4" id="doctorVideo" style="display: none;">
+    <div class="card-body">
+        <h4 class="card-title">Video Call with Patient</h4>
+        <!-- Video call elements for doctor would go here -->
+    </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">What Our Patients Say</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-modern p-4 text-center h-100">
+                    <p>"HealthCare made it so easy to book appointments online. Doctors are professional and caring!"</p>
+                    <h6 class="fw-bold mt-3">– Ahmed T.</h6>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-modern p-4 text-center h-100">
+                    <p>"I love the online consultation feature. I could talk to my doctor from home and get proper advice quickly."</p>
+                    <h6 class="fw-bold mt-3">– Sara M.</h6>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-modern p-4 text-center h-100">
+                    <p>"The clinics are modern and well-equipped. I feel safe and well cared for every time I visit."</p>
+                    <h6 class="fw-bold mt-3">– Mohamed A.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ADVANCED FEATURES -->
+<section id="advancedFeatures" class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">Why Choose HealthCare?</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-3">
+                <div class="p-4 rounded shadow-modern h-100">
+                    <i class="bi bi-people-fill display-4 mb-3 text-primary"></i>
+                    <h5 class="fw-bold mb-2">Expert Team</h5>
+                    <p>Certified doctors across all specialties ensuring top-notch healthcare.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-4 rounded shadow-modern h-100">
+                    <i class="bi bi-hospital-fill display-4 mb-3 text-primary"></i>
+                    <h5 class="fw-bold mb-2">Modern Clinics</h5>
+                    <p>State-of-the-art facilities for accurate diagnosis and treatment.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-4 rounded shadow-modern h-100">
+                    <i class="bi bi-laptop display-4 mb-3 text-primary"></i>
+                    <h5 class="fw-bold mb-2">Online Consultation</h5>
+                    <p>Book virtual appointments with ease from the comfort of your home.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-4 rounded shadow-modern h-100">
+                    <i class="bi bi-heart-fill display-4 mb-3 text-primary"></i>
+                    <h5 class="fw-bold mb-2">Patient Care</h5>
+                    <p>We prioritize patient satisfaction and provide personalized health support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3">HealthCare</h5>
+                <p>Connecting you with top doctors and clinics with modern, reliable health services anytime, anywhere.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none" data-page="homePage">Home</a></li>
+                    <li><a href="#" class="text-white text-decoration-none" data-page="aboutPage">Doctors</a></li>
+                    <li><a href="#" class="text-white text-decoration-none" data-page="blogPage">Blog</a></li>
+                    <li><a href="#" class="text-white text-decoration-none" data-page="contactPage">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3">Contact Us</h5>
+                <p>Email: info@healthcare.com</p>
+                <p>Phone: +20 123 456 7890</p>
+                <p>Address: 123 Health St, Cairo, Egypt</p>
+                <div class="mt-3">
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="text-center">
+            &copy; 2025 HealthCare Platform. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+   
+    fetch('/api/health')
+        .then(response => response.json())
+        .then(data => {
+            console.log('✅ API Connection:', data.status);
+        })
+        .catch(error => {
+            console.warn('⚠️ API Connection failed, using localStorage');
+        });
+});
+</script>
+
+</body>
+</html>
